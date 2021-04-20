@@ -1,0 +1,197 @@
+@font-face{
+	src: url("../fonts/TaxiDriver.ttf");
+	font-family: "Taxi Driver";
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+	font-family: "Taxi Driver";
+}
+header{
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	font-size: 18px;
+	transition: all .4s ease-out;
+}
+.max-header{
+    background-color: #2574a9;
+    height: 100px;
+}
+.min-header{
+	background-color: #c5eff7;
+	height: 80px;
+}
+.container{
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 60px;
+	display: grid;
+	align-content: center;
+	grid-template-areas: 
+		"logo ... nav";
+	grid-template-columns: auto 1fr auto;
+}
+.logo{
+	grid-area: logo;
+}
+.logo img{
+	transition: all .4s ease-out;
+}
+.max-logo img{
+	width: 320px;
+}
+.min-logo img{
+	width: 280px;
+}
+.nav-bar{
+	display: grid;
+	align-content: center;
+	grid-area: nav;
+}
+.nav-bar ul{
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap:20px;
+}
+.nav-bar a{
+	font-size: 18px;
+	font-family: "Taxi Driver";
+	text-transform: uppercase;
+	color: #c5eff7;
+	transition: all .4s ease-out;
+}
+.max-nav a{
+	font-size: 1em;
+	color: #c5eff7;
+}
+.min-nav a{
+	font-size: 0.875em;
+	color: #2574a9;	
+}
+.ghost{
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+}
+main{
+	font-size: 20px;
+}
+main section{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	font-family: "Taxi Driver";
+	font-size: 1em;
+	color: #2574a9;
+}
+main section:nth-child(odd){
+	height: 100vh;
+	background-color: #fff;
+}
+main section:nth-child(even){
+	height: 100vh;
+	background-color: #b7b5eb;
+}
+/* estilo sobre */
+.fabrica{
+	max-width: 1000px;
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+.img1{
+	width: 70%;
+	height: auto;
+	background-color: #fff;
+}
+.img img{
+	width: 100%;
+}
+.desc-fabrica{
+	width: 40%;
+	margin-left: 35px;
+}
+.desc-fabrica h1{
+    font-size: 35px;
+    color:#2C4D99;
+}
+.desc-fabrica h3{
+	text-indent: 20px;
+	letter-spacing: 2px;
+}
+.desc-rodape{
+	display: flex;
+	justify-content: space-around;
+}
+.projeto{
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	padding: 10px;
+	text-indent: 30px;
+}
+.infomais{
+	width: 60%;
+	height: auto;
+	padding: 15px;
+	letter-spacing: 1px;
+}
+#Projeto article{
+	margin: 10px 40px;
+}
+.card{
+	width: 100%;
+	display: flex;
+	margin:50px;
+	
+}
+.card1{
+	width: 350px;
+	height: 280px;
+	margin: 10px;
+}
+.beneficios{
+	width: 980px;
+	max-width: 100%;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.desmatamento{
+	max-width: 900px;
+	width: 100%;
+	text-indent: 30px;
+	margin-top: 50px;
+}
+.card1 div{
+	margin:10px;
+	float: left;
+}
+.btn{
+	width: 350px;
+	height: 50px;
+	margin: 0 auto;
+}
+.btn button{
+	width: 350px;
+	height: 50px;
+	background-color: green;
+	opacity: .8;
+	border: none;
+	border-radius: 10px;
+	color: #fff;
+}
+.btn button:hover{
+	cursor: pointer;
+	opacity: .9;
+}
